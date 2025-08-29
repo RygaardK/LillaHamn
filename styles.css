@@ -99,7 +99,7 @@ body {
   bottom: -5px;
   left: 0;
   background-color: var(--primary-blue);
-  transition: width 0.3s ease;
+  transition: width 0.4s ease;
 }
 
 .nav-link:hover::after {
@@ -193,8 +193,8 @@ body {
 }
 
 .placeholder-image {
-  width: 300px;
-  height: 300px;
+  min-width: 150px;
+  min-height: 150px;
   background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
   border-radius: 50%;
   display: flex;
@@ -563,12 +563,6 @@ footer {
     font-size: 2.5rem;
   }
 
-  .placeholder-image {
-    width: 250px;
-    height: 250px;
-    font-size: 4rem;
-  }
-
   .values {
     grid-template-columns: 1fr;
   }
@@ -659,7 +653,10 @@ html {
 }
 
 /* Focus styles för tangentbordsnavigering */
-.nav-link:focus,
+.nav-link:focus {
+  font-weight: bold;
+}
+
 .cta-button:focus,
 .contact-item a:focus,
 .submit-button:focus,

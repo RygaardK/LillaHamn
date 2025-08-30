@@ -4,316 +4,612 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lilla Hamn - Professionella Familjeutredningar & Konsultation</title>
-    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Custom CSS (loads after Bootstrap) -->
+    <link rel="stylesheet" href="styles-bootstrap.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <div class="nav-container">
-          <div class="logo">
-            <h1>Lilla Hamn</h1>
-            <span class="tagline">Professionella Familjeutredningar</span>
-          </div>
-          <ul class="nav-menu">
-            <li><a href="#hem" class="nav-link">Hem</a></li>
-            <li><a href="#tjanster" class="nav-link">Tjänster</a></li>
-            <li><a href="#om-oss" class="nav-link">Om oss</a></li>
-            <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#hem">
+            <div class="logo">
+              <h1 class="mb-0">Lilla Hamn</h1>
+              <span class="tagline">Professionella Familjeutredningar</span>
+            </div>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#hem">Hem</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tjanster">Tjänster</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#om-oss">Om oss</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#kontakt">Kontakt</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
 
     <main>
-      <section id="hem" class="hero">
-        <div class="hero-content">
-          <h2>Expertis inom Familjeutredningar</h2>
-          <p class="hero-subtitle">
-            Vi levererar professionella utredningar och konsultation som skapar verklig förändring för familjer
-          </p>
-          <p class="hero-description">
-            Med över 15 års samlad erfarenhet inom socialtjänst och familjerättsområdet erbjuder Lilla Hamn högkvalitativa utredningar som möter både myndigheters krav och familjers behov av trygghet och förståelse.
-          </p>
-          <div class="hero-buttons">
-            <a href="#kontakt" class="cta-button primary">Boka konsultation</a>
-            <a href="#tjanster" class="cta-button secondary">Se våra tjänster</a>
-          </div>
-        </div>
-        <div class="hero-image">
-          <div class="placeholder-image">
-            <span>🏛️</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="tjanster" class="services">
+      <section id="hem" class="hero py-5">
         <div class="container">
-          <h2>Våra Tjänster</h2>
-          <p class="section-intro">Professionella lösningar anpassade efter era specifika behov</p>
-          <div class="services-grid">
-            <div class="service-card">
-              <div class="service-icon">📋</div>
-              <h3>Familjeutredningar</h3>
-              <p>Omfattande utredningar enligt Socialstyrelsens riktlinjer för adoption, vårdnad och umgänge.</p>
-              <ul class="service-features">
-                <li>✓ Hembesök och intervjuer</li>
-                <li>✓ Psykosocial bedömning</li>
-                <li>✓ Komplett dokumentation</li>
-              </ul>
-            </div>
-            <div class="service-card">
-              <div class="service-icon">👥</div>
-              <h3>Familjemedling</h3>
-              <p>Strukturerad medling för att lösa konflikter och förbättra kommunikationen mellan familjemedlemmar.</p>
-              <ul class="service-features">
-                <li>✓ Konfliktlösning</li>
-                <li>✓ Kommunikationsträning</li>
-                <li>✓ Långsiktiga strategier</li>
-              </ul>
-            </div>
-            <div class="service-card">
-              <div class="service-icon">🎯</div>
-              <h3>Konsultation & Rådgivning</h3>
-              <p>Expertråd till myndigheter, juridiska företag och organisationer inom familjerättsområdet.</p>
-              <ul class="service-features">
-                <li>✓ Juridisk rådgivning</li>
-                <li>✓ Metodutveckling</li>
-                <li>✓ Utbildning & kompetensutveckling</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="om-oss" class="about">
-        <div class="container">
-          <h2>Varför välja Lilla Hamn?</h2>
-          <div class="about-content">
-            <div class="about-text">
-              <p class="lead-text"></p>
-                Lilla Hamn är ett ledande konsultföretag inom familjeutredningar med gedigen expertis och bevisad framgång. Vi kombinerar professionalism med empati för att leverera resultat som verkligen gör skillnad.
+          <div
+            class="row align-items-center min-vh-100"
+            style="padding-top: 80px"
+          >
+            <div class="col-lg-6">
+              <h1 class="display-4 fw-bold text-primary mb-4">
+                <i class="bi bi-shield-check me-3"></i>
+                Expertis inom Familjeutredningar
+              </h1>
+              <p class="lead text-primary mb-4">
+                Vi levererar professionella utredningar och konsultation som
+                skapar verklig förändring för familjer
               </p>
-              <p>
-                Vårt team består av auktoriserade socialarbetare, psykologer och familjerättsspecialister med mångårig erfarenhet från både offentlig och privat sektor. Vi arbetar enligt de högsta professionella standarderna och följer alltid Socialstyrelsens riktlinjer.
+              <p class="fs-5 text-muted mb-4">
+                Med över 15 års samlad erfarenhet inom socialtjänst och
+                familjerättsområdet erbjuder Lilla Hamn högkvalitativa
+                utredningar som möter både myndigheters krav och familjers behov
+                av trygghet och förståelse.
               </p>
-              <div class="stats">
-                <div class="stat-item">
-                  <div class="stat-number">500+</div>
-                  <div class="stat-label">Genomförda utredningar</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number">98%</div>
-                  <div class="stat-label">Nöjda klienter</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-number">15+</div>
-                  <div class="stat-label">Års samlad erfarenhet</div>
-                </div>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="#kontakt" class="btn btn-primary btn-lg">
+                  <i class="bi bi-calendar-check me-2"></i>
+                  Boka konsultation
+                </a>
+                <a href="#tjanster" class="btn btn-outline-primary btn-lg">
+                  <i class="bi bi-list-ul me-2"></i>
+                  Se våra tjänster
+                </a>
               </div>
-              <div class="values">
-                <div class="value-item">
-                  <h3>🏆 Expertis</h3>
-                  <p>Auktoriserade specialister med djup kunskap inom familjerättsområdet</p>
-                </div>
-                <div class="value-item">
-                  <h3>⚡ Effektivitet</h3>
-                  <p>Snabba leveranser utan att kompromissa med kvaliteten</p>
-                </div>
-                <div class="value-item">
-                  <h3>🔒 Diskretion</h3>
-                  <p>Fullständig sekretess och professionell hantering av känslig information</p>
-                </div>
-                <div class="value-item">
-                  <h3>💼 Tillgänglighet</h3>
-                  <p>Flexibla lösningar anpassade efter era tidsramar och behov</p>
-                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+              <div class="hero-image">
+                <i class="bi bi-building display-1 text-primary"></i>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="vision" class="vision">
+      <section id="tjanster" class="services py-5 bg-light">
         <div class="container">
-          <h2>Vår Mission</h2>
-          <div class="vision-content">
-            <p class="vision-statement">
-              Att vara den förtroendegivande partnern för familjer, myndigheter och juridiska aktörer genom att leverera professionella utredningar av högsta kvalitet. Vi skapar trygghet genom expertis, transparens och bevisad framgång.
+          <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-dark">Våra Tjänster</h2>
+            <p class="lead text-muted">
+              Professionella lösningar anpassade efter era specifika behov
             </p>
-            <div class="vision-goals">
-              <div class="goal-item">
-                <span class="goal-icon">📈</span>
-                <h3>Kvalitetsgaranti</h3>
-                <p>Alla våra utredningar genomgår kvalitetskontroll och lever upp till myndighetskrav</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow-sm border-0">
+                <div class="card-body text-center p-4">
+                  <div class="service-icon mb-3">
+                    <i class="bi bi-clipboard-data display-4 text-primary"></i>
+                  </div>
+                  <h3 class="card-title h4 mb-3">Familjeutredningar</h3>
+                  <p class="card-text text-muted mb-4">
+                    Omfattande utredningar enligt Socialstyrelsens riktlinjer
+                    för adoption, vårdnad och umgänge.
+                  </p>
+                  <ul class="list-unstyled text-start">
+                    <li class="mb-2">
+                      <i class="bi bi-check-circle text-success me-2"></i>
+                      Hembesök och intervjuer
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check-circle text-success me-2"></i>
+                      Psykosocial bedömning
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check-circle text-success me-2"></i>
+                      Komplett dokumentation
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="goal-item">
-                <span class="goal-icon">🤝</span>
-                <h3>Långsiktiga partnerskap</h3>
-                <p>Vi bygger varaktiga relationer med våra klienter baserat på förtroende och resultat</p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow-sm border-0">
+                <div class="card-body text-center p-4">
+                  <div class="service-icon mb-3">
+                    <i class="bi bi-people display-4 text-primary"></i>
+                  </div>
+                  <h3 class="card-title h4 mb-3">Familjemedling</h3>
+                  <p class="card-text text-muted mb-4">
+                    Strukturerad medling för att lösa konflikter och förbättra
+                    kommunikationen mellan familjemedlemmar.
+                  </p>
+                  <ul class="list-unstyled text-start">
+                    <li class="mb-2">
+                      <i class="bi bi-check-circle text-success me-2"></i>
+                      Konfliktlösning
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check-circle text-success me-2"></i>
+                      Kommunikationsträning
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check-circle text-success me-2"></i>
+                      Långsiktiga strategier
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="goal-item">
-                <span class="goal-icon">🌟</span>
-                <h3>Branschledare</h3>
-                <p>Kontinuerlig utveckling för att vara den mest respekterade aktören inom området</p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card h-100 shadow-sm border-0">
+                <div class="card-body text-center p-4">
+                  <div class="service-icon mb-3">
+                    <i class="bi bi-bullseye display-4 text-primary"></i>
+                  </div>
+                  <h3 class="card-title h4 mb-3">Konsultation & Rådgivning</h3>
+                  <p class="card-text text-muted mb-4">
+                    Expertråd till myndigheter, juridiska företag och
+                    organisationer inom familjerättsområdet.
+                  </p>
+                  <ul class="list-unstyled text-start">
+                    <li class="mb-2">
+                      <i class="bi bi-check-circle text-success me-2"></i>
+                      Juridisk rådgivning
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check-circle text-success me-2"></i>
+                      Metodutveckling
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check-circle text-success me-2"></i>
+                      Utbildning & kompetensutveckling
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="cta-section">
+      <section id="om-oss" class="about py-5">
         <div class="container">
-          <div class="cta-content">
-            <h2>Redo att ta nästa steg?</h2>
-            <p>Kontakta oss idag för en kostnadsfri konsultation och se hur vi kan hjälpa er familj eller organisation.</p>
-            <div class="cta-buttons">
-              <a href="#kontakt" class="cta-button primary large">Boka gratis konsultation</a>
-              <a href="tel:+46101234567" class="cta-button secondary large">Ring oss: 010-123 45 67</a>
-            </div>
+          <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-dark">
+              Varför välja Lilla Hamn?
+            </h2>
           </div>
-        </div>
-      </section>
-
-      <section id="kontakt" class="contact">
-        <div class="container">
-          <h2>Kontakta oss</h2>
-          <div class="contact-content">
-            <div class="contact-info">
-              <h3>Låt oss hjälpa er</h3>
-              <p>
-                Vårt team av experter är redo att diskutera era behov och utforma en skräddarsydd lösning. Vi erbjuder flexibla möten och snabba svarstider.
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <p class="lead-text text-center mb-4">
+                Lilla Hamn är ett ledande konsultföretag inom familjeutredningar
+                med gedigen expertis och bevisad framgång. Vi kombinerar
+                professionalism med empati för att leverera resultat som
+                verkligen gör skillnad.
+              </p>
+              <p class="text-center mb-5">
+                Vårt team består av auktoriserade socialarbetare, psykologer och
+                familjerättsspecialister med mångårig erfarenhet från både
+                offentlig och privat sektor. Vi arbetar enligt de högsta
+                professionella standarderna och följer alltid Socialstyrelsens
+                riktlinjer.
               </p>
 
-              <div class="contact-details">
-                <div class="contact-item">
-                  <span class="contact-icon">🏢</span>
-                  <div>
-                    <h4>Huvudkontor</h4>
-                    <p>Hamnvägen 12<br />123 45 Lilla Hamn</p>
+              <div class="stats row g-4 mb-5">
+                <div class="col-md-4">
+                  <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Genomförda utredningar</div>
                   </div>
                 </div>
-                <div class="contact-item">
-                  <span class="contact-icon">📧</span>
-                  <div>
-                    <h4>E-post</h4>
-                    <p>
-                      <a href="mailto:info@lillahamn.se">info@lillahamn.se</a>
-                    </p>
+                <div class="col-md-4">
+                  <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Nöjda klienter</div>
                   </div>
                 </div>
-                <div class="contact-item">
-                  <span class="contact-icon">📞</span>
-                  <div>
-                    <h4>Telefon</h4>
-                    <p><a href="tel:+46101234567">010-123 45 67</a></p>
-                    <small>Vardagar 08:00-17:00</small>
+                <div class="col-md-4">
+                  <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Års samlad erfarenhet</div>
                   </div>
                 </div>
               </div>
 
-              <div class="business-hours">
-                <h4>Öppettider</h4>
-                <p>Måndag - Fredag: 08:00 - 17:00<br>
-                Akutfall: Kontakta oss via e-post</p>
+              <div class="values">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="value-item">
+                      <h3><i class="bi bi-trophy me-2"></i>Expertis</h3>
+                      <p>
+                        Auktoriserade specialister med djup kunskap inom
+                        familjerättsområdet
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="value-item">
+                      <h3><i class="bi bi-lightning me-2"></i>Effektivitet</h3>
+                      <p>
+                        Snabba leveranser utan att kompromissa med kvaliteten
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="value-item">
+                      <h3><i class="bi bi-lock me-2"></i>Diskretion</h3>
+                      <p>
+                        Fullständig sekretess och professionell hantering av
+                        känslig information
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="value-item">
+                      <h3>
+                        <i class="bi bi-briefcase me-2"></i>Tillgänglighet
+                      </h3>
+                      <p>
+                        Flexibla lösningar anpassade efter era tidsramar och
+                        behov
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="contact-form">
-              <h3>Begär offert</h3>
-              <form>
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="name">Namn *</label>
-                    <input type="text" id="name" name="name" required />
+          </div>
+        </div>
+      </section>
+
+      <section id="vision" class="vision py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-dark">Vår Mission</h2>
+            <p class="vision-statement">
+              Att vara den förtroendegivande partnern för familjer, myndigheter
+              och juridiska aktörer genom att leverera professionella
+              utredningar av högsta kvalitet. Vi skapar trygghet genom expertis,
+              transparens och bevisad framgång.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+              <div class="goal-item">
+                <span class="goal-icon"
+                  ><i class="bi bi-graph-up display-4 text-primary"></i
+                ></span>
+                <h3>Kvalitetsgaranti</h3>
+                <p>
+                  Alla våra utredningar genomgår kvalitetskontroll och lever upp
+                  till myndighetskrav
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="goal-item">
+                <span class="goal-icon"
+                  ><i class="bi bi-handshake display-4 text-primary"></i
+                ></span>
+                <h3>Långsiktiga partnerskap</h3>
+                <p>
+                  Vi bygger varaktiga relationer med våra klienter baserat på
+                  förtroende och resultat
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="goal-item">
+                <span class="goal-icon"
+                  ><i class="bi bi-star display-4 text-primary"></i
+                ></span>
+                <h3>Branschledare</h3>
+                <p>
+                  Kontinuerlig utveckling för att vara den mest respekterade
+                  aktören inom området
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section py-5">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="display-5 fw-bold mb-4">Redo att ta nästa steg?</h2>
+            <p class="lead mb-4">
+              Kontakta oss idag för en kostnadsfri konsultation och se hur vi
+              kan hjälpa er familj eller organisation.
+            </p>
+            <div class="d-flex flex-wrap gap-3 justify-content-center">
+              <a href="#kontakt" class="btn btn-light btn-lg">
+                <i class="bi bi-calendar-check me-2"></i>
+                Boka gratis konsultation
+              </a>
+              <a href="tel:+46101234567" class="btn btn-outline-light btn-lg">
+                <i class="bi bi-telephone me-2"></i>
+                Ring oss: 010-123 45 67
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="kontakt" class="contact py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-dark">Kontakta oss</h2>
+            <p class="lead">
+              Vårt team av experter är redo att diskutera era behov och utforma
+              en skräddarsydd lösning.
+            </p>
+          </div>
+          <div class="row g-5">
+            <div class="col-lg-6">
+              <div class="contact-info">
+                <h3 class="h4 mb-4">Låt oss hjälpa er</h3>
+                <p class="mb-4">
+                  Vi erbjuder flexibla möten och snabba svarstider för att ge er
+                  den bästa servicen.
+                </p>
+
+                <div class="contact-details">
+                  <div class="contact-item">
+                    <span class="contact-icon"
+                      ><i class="bi bi-building"></i
+                    ></span>
+                    <div>
+                      <h4>Huvudkontor</h4>
+                      <p>Hamnvägen 12<br />123 45 Lilla Hamn</p>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="company">Organisation/Företag</label>
-                    <input type="text" id="company" name="company" />
+                  <div class="contact-item">
+                    <span class="contact-icon"
+                      ><i class="bi bi-envelope"></i
+                    ></span>
+                    <div>
+                      <h4>E-post</h4>
+                      <p>
+                        <a href="mailto:info@lillahamn.se">info@lillahamn.se</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <span class="contact-icon"
+                      ><i class="bi bi-telephone"></i
+                    ></span>
+                    <div>
+                      <h4>Telefon</h4>
+                      <p><a href="tel:+46101234567">010-123 45 67</a></p>
+                      <small class="text-muted">Vardagar 08:00-17:00</small>
+                    </div>
                   </div>
                 </div>
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="email">E-post *</label>
-                    <input type="email" id="email" name="email" required />
+
+                <div class="business-hours">
+                  <h4><i class="bi bi-clock me-2"></i>Öppettider</h4>
+                  <p class="mb-0">
+                    Måndag - Fredag: 08:00 - 17:00<br />
+                    Akutfall: Kontakta oss via e-post
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="contact-form">
+                <h3 class="h4 mb-4">Begär offert</h3>
+                <form id="contactForm" novalidate>
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="name" class="form-label">Namn *</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Vänligen ange ditt namn.
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="company" class="form-label"
+                        >Organisation/Företag</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="company"
+                        name="company"
+                      />
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="phone">Telefon</label>
-                    <input type="tel" id="phone" name="phone" />
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="email" class="form-label">E-post *</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Vänligen ange en giltig e-postadress.
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="phone" class="form-label">Telefon</label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div class="form-group">
-                  <label for="service">Typ av tjänst</label>
-                  <select id="service" name="service">
-                    <option value="">Välj tjänst</option>
-                    <option value="familjeutredning">Familjeutredning</option>
-                    <option value="medling">Familjemedling</option>
-                    <option value="konsultation">Konsultation</option>
-                    <option value="annat">Annat</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="message">Beskrivning av behov *</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="4"
-                    required
-                    placeholder="Beskriv kort era behov och tidsram..."
-                  ></textarea>
-                </div>
-                <button type="submit" class="submit-button">
-                  Skicka förfrågan
-                </button>
-              </form>
+                  <div class="mb-3">
+                    <label for="service" class="form-label"
+                      >Typ av tjänst</label
+                    >
+                    <select class="form-select" id="service" name="service">
+                      <option value="">Välj tjänst</option>
+                      <option value="familjeutredning">Familjeutredning</option>
+                      <option value="medling">Familjemedling</option>
+                      <option value="konsultation">Konsultation</option>
+                      <option value="annat">Annat</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label"
+                      >Beskrivning av behov *</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      rows="4"
+                      required
+                      placeholder="Beskriv kort era behov och tidsram..."
+                    ></textarea>
+                    <div class="invalid-feedback">
+                      Vänligen beskriv era behov.
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-lg w-100">
+                    <i class="bi bi-send me-2"></i>
+                    Skicka förfrågan
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="bg-dark text-light py-5">
       <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <h3>Lilla Hamn</h3>
-            <p>Professionella Familjeutredningar</p>
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="footer-logo">
+              <h3 class="text-primary">Lilla Hamn</h3>
+              <p class="text-muted">Professionella Familjeutredningar</p>
+            </div>
           </div>
-          <div class="footer-links">
+          <div class="col-lg-4 col-md-6 mb-4">
             <div class="footer-column">
               <h4>Tjänster</h4>
-              <ul>
-                <li><a href="#tjanster">Familjeutredningar</a></li>
-                <li><a href="#tjanster">Familjemedling</a></li>
-                <li><a href="#tjanster">Konsultation</a></li>
-              </ul>
-            </div>
-            <div class="footer-column">
-              <h4>Företag</h4>
-              <ul>
-                <li><a href="#om-oss">Om oss</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-                <li><a href="#">Integritetspolicy</a></li>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="#tjanster" class="text-decoration-none text-muted"
+                    >Familjeutredningar</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#tjanster" class="text-decoration-none text-muted"
+                    >Familjemedling</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#tjanster" class="text-decoration-none text-muted"
+                    >Konsultation</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
-          <div class="footer-info">
-            <p>&copy; 2025 Lilla Hamn AB. Alla rättigheter förbehållna.</p>
-            <p>Org.nr: 556XXX-XXXX | Auktoriserad enligt Socialstyrelsens riktlinjer</p>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="footer-column">
+              <h4>Företag</h4>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <a href="#om-oss" class="text-decoration-none text-muted"
+                    >Om oss</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#kontakt" class="text-decoration-none text-muted"
+                    >Kontakt</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="text-decoration-none text-muted"
+                    >Integritetspolicy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <p class="text-muted mb-0">
+              &copy; 2025 Lilla Hamn AB. Alla rättigheter förbehållna.
+            </p>
+          </div>
+          <div class="col-md-4 text-md-end">
+            <small class="text-muted"
+              >Org.nr: 556XXX-XXXX | Auktoriserad enligt Socialstyrelsens
+              riktlinjer</small
+            >
           </div>
         </div>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script-bootstrap.js"></script>
   </body>
 </html>
